@@ -6,8 +6,7 @@ package com.github.zk.proxy.dynamic;
  */
 public class Test {
     public static void main(String[] args) {
-        DemoImpl demoImpl = new DemoImpl();
-        IDemo demo = (IDemo) new ProxyClass().getProxy(demoImpl);
+        IDemo demo = (IDemo) new ProxyClass().getProxy(DemoImpl.class);
         demo.methodOne(1);
 
     }

@@ -2,7 +2,7 @@ package com.github.zk.iterator;
 
 /**
  * Iterator模式 示例
- *
+ * 示例采用向书架上放书，再从书架遍历所有书，取出书名
  * @author zk
  * @date 2021/5/15 16:28
  */

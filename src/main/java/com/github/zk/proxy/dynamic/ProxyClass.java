@@ -5,12 +5,13 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 代理类
  * @Author zk
  * @Date 2019/5/27 22:36
  */
 public class ProxyClass {
     public Object getProxy(final Class clazz) {
-        Object o = Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), new InvocationHandler() {
+        return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 System.out.println("before");
@@ -19,6 +20,5 @@ public class ProxyClass {
                 return result;
             }
         });
-        return o;
     }
 }

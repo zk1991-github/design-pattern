@@ -10,7 +10,7 @@ import java.util.List;
  * @date 2021/5/26 10:44
  */
 public class IdCardFactory extends Factory {
-    private List<String> cards = new ArrayList<>();
+    private final List<String> cards = new ArrayList<>();
     @Override
     protected Product createProduct(String owner) {
         System.out.println("制作【" + owner + "】的卡");

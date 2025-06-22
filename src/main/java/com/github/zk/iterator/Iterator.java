@@ -9,13 +9,15 @@ package com.github.zk.iterator;
 public interface Iterator {
     /**
      * 是否存在下一条数据
-     * @return
+     *
+     * @return 是否存在状态
      */
     boolean hasNext();
 
     /**
      * 下一条数据
-     * @return
+     *
+     * @return 下一条数据对象
      */
     Object next();
 }

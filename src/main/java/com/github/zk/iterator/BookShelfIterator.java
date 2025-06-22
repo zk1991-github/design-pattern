@@ -7,7 +7,7 @@ package com.github.zk.iterator;
  * @date 2021/5/15 16:02
  */
 public class BookShelfIterator implements Iterator {
-    private BookShelf bookShelf;
+    private final BookShelf bookShelf;
     private int index;
 
     public BookShelfIterator(BookShelf bookShelf) {

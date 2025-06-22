@@ -7,7 +7,7 @@ package com.github.zk.iterator;
  * @date 2021/5/15 14:39
  */
 public class BookShelf implements Aggregate {
-    private Book[] books;
+    private final Book[] books;
     private int last;
 
     public BookShelf(int size) {

@@ -9,7 +9,8 @@ package com.github.zk.iterator;
 public interface Aggregate {
     /**
      * 迭代器接口
-     * @return
+     *
+     * @return Iterator对象
      */
     Iterator iterator();
 }
